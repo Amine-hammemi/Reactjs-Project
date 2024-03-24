@@ -1,0 +1,95 @@
+.board-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.board-row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+h3{
+    color: aquamarine;
+    
+}
+.score {
+    background-color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+h5{
+    font-size: large;
+    font-style: italic;
+    color: red;
+}
+.box{
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+.comp{
+    text-align: center;
+    
+    
+}
+
+.reset{
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    cursor : pointer;
+    border-radius: 50px;
+    background: #83b0c6;
+    font-size: 26px;
+    color:black;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#light  {background-color: white;}
+#dark {background-color: black;}
+#purple{background-color: rgb(113, 11, 113);}
+
+
+#dark .box {background-color: rgb(62, 59, 59);}
+#light .box{background-color: wheat ;}
+#purple .box{background-color: rgba(249, 144, 6, 0.827);}
+
+#dark .reset {background-color: rgb(40, 34, 34);}
+#light .reset {background-color: rgb(196, 161, 96);}
+#purple .reset {background-color: rgba(249, 144, 6, 0.827);}
+
+
+#dark #welcome {color : white ;}
+#light #welcome{color: red;}
+#purple #welcome{color: rgba(215, 90, 45, 0.822);}
+
+#purple .score {background-color: rgb(223, 42, 223);}
+#light .score {background-color:rgb(218, 183, 113);}
+
+#dark .players {color: white;}
+#light .players {color: black;}
+.mood {
+    width: 20px;
+    height: 20px;
+}
+
+#dark .box span{color : red;}
+
+#lightmood{background-color: white;}
+#darkmood{background-color: black;}
+#purplemood{background-color: purple;}
