@@ -27,19 +27,18 @@ const Rendersquare = ()=>{
     const [theme , setTheme] = useState("default");
 
     const playing= (e , i ) =>{
-        if(test === 0 && square[i]===null){
-            //e.target.innerHTML = `<img src='${X}'></img>`;
+        if( square[i]===null){
+
+            if (test === 0){
 
             e.target.innerHTML = `<h1>X</h1>`;
             const newSquares = [...square];
             newSquares[i] = 'X';
             setSquare(newSquares);
             setTest(1);
-            checkwinner(newSquares);
-        }
-        else if (test === 1 && square[i]===null) {
             
-            //e.target.innerHTML =`<img src='${O}'></img>`;
+        }
+        else if (test === 1) {
             e.target.innerHTML = `<h1>O</h1>`;
             const newSquares = [...square];
             newSquares[i] = 'O';
@@ -48,6 +47,7 @@ const Rendersquare = ()=>{
             checkwinner(newSquares);
             
         }
+    }
         else {return ;}
     }
     const reset =() =>{
