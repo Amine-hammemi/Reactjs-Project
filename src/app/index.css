@@ -1,0 +1,131 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns */
+    grid-gap: 10px; /* space between the boxes */
+    margin: 20px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem; /* Make X and O larger */
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  .reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.board-row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+h3{
+    color: aquamarine;
+    
+}
+.score {
+    background-color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+h5{
+    font-size: large;
+    font-style: italic;
+    color: red;
+}
+.box{
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+.comp{
+    text-align: center;
+    
+    
+}
+
+.reset{
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    cursor : pointer;
+    border-radius: 50px;
+    background: #83b0c6;
+    font-size: 26px;
+    color:black;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+  /* Overlay form */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;  /* Ensure the form is on top */
+  }
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #ec971f;
+  }
+  
